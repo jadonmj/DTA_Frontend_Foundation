@@ -1,0 +1,17 @@
+Assignment-2
+~~~~~~~~~~~~
+1. How to display images in title bar?
+2. What is the purpose of "alt" attribute of img tag?
+3. Why do we use tbody, thead, tfoot tags?
+
+Ans1:	1. Create an ".ico" image file; For eg: "My_Icon.ico" image file.
+	2. Add the Image file into the website and also add the link tag to the "head" section of the page.
+	<link rel="shortcut icon" href="My_Icon.ico" />
+	You can add this link tag into your master page or header page that you are using in the website as a common control.
+
+	3. After adding the ".ico" file into your website run the page in various browsers.
+			The rel attribute specifies the relationship between the current document and the linked document.
+
+Ans2:	The <img> alt attribute is used to specify the alternate text for an image. It is useful when the image is not displayed. It is used to give alternative information for an image. It is also very much helpful in the google ranking of your page.  <img alt="text">
+
+Ans3:	The HTML <tbody> tag is used for grouping table rows. The <tbody> tag is used in conjunction with the <thead> tag and the <tfoot> tag in determining each part of the table (header, footer, body). Browsers can use this information to enable scrolling of the table body independently of the header and footer - particularly useful for large tables
