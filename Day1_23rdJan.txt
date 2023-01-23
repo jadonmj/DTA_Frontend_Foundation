@@ -1,0 +1,21 @@
+Assignment-1
+~~~~~~~~~~~~
+1.  What is JSON?  
+2.   What is HTTP Status codes?
+3.   What is the meaning of 500 Status codes?
+4.   What is No-Sql Databases?
+
+Ans1: JSON stands for J ava S cript O bject N otation. JSON is a lightweight format for storing and transporting data. JSON is often used when data is sent from a server to a web page. JSON is "self-describing" and easy to understand.
+
+Ans2: HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599)
+
+Ans3: The 500 status code "internal server error" is just that - it's an error on the server-side. This means that the server encountered something unexpected that prevented it from fulfilling the request. In some ways, it’s an ambiguous error. The server doesn’t know exactly what’s wrong, but it knows something is wrong.
+
+Ans4: NoSQL Database is used to refer a non-SQL or non relational database.
+It provides a mechanism for storage and retrieval of data other than tabular relations model used in relational databases. NoSQL database doesn't use tables for storing data. It is generally used to store big data and real-time web applications.
