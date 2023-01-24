@@ -1,0 +1,30 @@
+Q:  What is difference between get/post methods in form tag?
+	Q:  What is querystring? 
+	Q :  Why do we use  ~  and >  symbols in css selectors?		
+					div ~ p  
+					div >  p
+					div   p
+					div,  p
+
+
+Ans2:
+A query string is the portion of a URL where data is passed to a web application and/or back-end database. The reason we need query strings is that the HTTP protocol is stateless by design.
+
+
+
+Ans1:
+GET method - used to request data from a specified resource, clearly visible in address bar it is less secure
+POST method - used to send data to a server to update a resource, not shown in add bar which maintains security
+
+Ans3:
+     > Sign:
+It will target elements which are DIRECT children of a particular element.
+
+       Space:
+It is the descendant selector. It will target all p tags within container div.
+
+     + Sign:
+It is Adjacent sibling combinator. It combines two sequences of simple selectors having the same parent and the second one must come IMMEDIATELY after the first.
+
+     ~ Sign:
+It is general sibling combinator and similar to Adjacent sibling combinator. the difference is that the second selector does NOT have to immediately follow the first one means It will select all elements that is preceded by the former selector.

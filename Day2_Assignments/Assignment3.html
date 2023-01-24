@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    h2{
+        color: white;
+        background-color: palevioletred;
+        /* border-color: blue solid; */
+        border: 1px blue solid;
+    }
+    span{
+        font-size: 50px;
+        color: palevioletred;
+    }
+    table{
+        width: 100%;
+        border-spacing: 0;
+    }
+    th{
+        background-color: green;
+        text-decoration: underline;
+        color:white
+    }
+    td{
+        /* border: 0.5px solid black; */
+
+        
+    }
+    .odd{
+        background-color: lightgray;
+    }
+    .even{
+        background-color: white;
+        
+    }
+    .odd td{
+        /* background-color: gray; */
+        border-bottom: 1px green solid;
+        border-top: 1px gray solid;
+    }
+    tr:hover{
+        opacity: 0.5;
+        background-color: blue;
+        color: white;
+    }
+</style>
+
+</head>
+<body>
+  <h2>Applying Styles to Tables</h2>  
+  <hr/>
+  <p> <span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Delectus et dolores culpa provident, veniam laudantium labore dolorem modi incidunt tempora, inventore adipisci possimus at debitis cupiditate nihil, quasi iusto eligendi exercitationem velit recusandae saepe necessitatibus sed! Cumque minus, eligendi ipsam explicabo necessitatibus temporibus itaque ea, illum assumenda voluptatum facilis suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos reiciendis, perferendis aliquid sapiente nobis quae repellat explicabo qui expedita!</p>
+  <table>
+    <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Skill Name</th>
+    </tr>
+    <tr class="odd">
+        <td >10256</td>
+        <td>Ravi</td>
+        <td>Angular</td>
+    </tr>
+    <tr class="even">
+        <td >10257</td>
+        <td>Kiran</td>
+        <td>React JS</td>
+    </tr>
+    <tr class="odd">
+        <td >10256</td>
+        <td>Ravi</td>
+        <td>Angular</td>
+    </tr>
+    <tr class="even">
+        <td class="even">10257</td>
+        <td>Kiran</td>
+        <td>React JS</td>
+    </tr>
+    <tr class="odd">
+        <td >10256</td>
+        <td>Ravi</td>
+        <td>Angular</td>
+    </tr>
+    <tr class="even">
+        <td >10257</td>
+        <td>Kiran</td>
+        <td>React JS</td>
+    </tr>
+
+  </table>
+
+
+
+</body>
+</html>
