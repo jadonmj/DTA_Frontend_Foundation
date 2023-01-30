@@ -1,0 +1,15 @@
+1. Why do we use value attribute of <option> tag?
+2. What is <input type="hidden"  />  ? Why do we use?
+3. Diff. between  <input type="submit"  />   and <button></button>  ?
+
+The value attribute specifies the value to be sent to a server when a form is submitted.
+The content between the opening <option> and closing </option> tags is what the browsers will display in a drop-down list. However, the value of the value attribute is what will be sent to the server when a form is submitted.
+
+Ans2:	The <input type="hidden"> defines a hidden input field.
+
+A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+
+A hidden field often stores what database record that needs to be updated when the form is submitted.
+
+Ans3:	The difference is that <button> can have content, whereas <input> cannot (it is a null element). While the button-text of an <input> can be specified, you cannot add markup to the text or insert a picture. So <button> has a wider array of display options.
+Button can have image as clickable button while input can only have text

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/254c99ed68.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+#container{
+    border: 1px black solid;
+    /* border-top: 0; */
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+}
+#head{
+    
+    background-color: lightskyblue;
+    padding: 10px;
+    color: white;
+ }
+ #main{
+    margin: 10px;
+ }
+ img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 13px;
+ }
+#month{
+    display: inline-block;
+    width: 40%;
+}
+#cvv{
+    
+    display: inline-block;
+    /* margin: 5%; */
+    width: 40%;
+}
+#three{
+    text-align: center;
+    background-color: lightgray;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="container">
+    <form action="backend.php" method="get" > 
+        <div id="head"><p><i class="fa-solid fa-lock" style="color: white;"></i> This is a secure 128-bit SSL Encrypted payment. You're safe.</p> </i></div>
+        <div id="main">
+        <input  type="radio" id="r1" name="r1" value="Credit Card"> Credit Card (Visa, Mastercard) 
+        <img  src="images/visa.png" alt="visa image"> <img  src="images/master-card-icon-0.png" alt="mastercard">
+        <input style="margin: 10px;" type="radio" id="r1" name="r1" value="Pay Pal">Pay Pal 
+         <img  src="images/paypal-icon-5.png" alt="paypal">
+         <br/> <br/>
+         <label for="Card no">Card number <small> &nbsp;  The 16 digits on front of your card</small></label> <br/>
+         <input style="width: 95%;" type="text" id="Card no" name="cardno">
+         <br/> <br/>
+         <div id="one">
+         <div id="month">
+         <label for="expiration date"><small>Expiration date</small> </label>
+         <br/>
+         <input type="month" id="expiration date" name="exp date">
+        </div>
+        <div id="cvv">
+            <label for="cvv"><small>CVV/CVC2</small> </label>
+            <br>
+            <input type="text" id="cvv" name="cvv"> 
+        </div>
+    </div>
+    <br/>
+    <div id="two">
+        <label for="name"><small>Full Name on a Card</small> </label>
+        <br>
+        <input style="width: 90%;" type="text" id="name" name="name">  
+    </div>
+    <br> 
+    <div id="three">
+        <p>You will be charged $29.00 every month</p>
+    </div>
+        </div>
+        
+    </form>
+</div>
+</body>
+</html>
