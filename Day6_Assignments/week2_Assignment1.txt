@@ -1,0 +1,39 @@
+Assignments
+~~~~~~~~~~~
+1. Can we apply more than one css class to html tags?  If yes, how to implement?
+2.  How to hide an element using CSS?
+3. How to implement following requirements in CSS3 (As per the image):
+		a. Apply space between words
+		b. Apply space between letters
+		c. Apply shadow for each character in the text
+		d. Other requirements as per the image
+4.  Create  a web page to prepare image gallery. Apply required CSS styles.
+5. Create web page to apply animation based on the position. Object should move from left to right.
+
+Ans1:	Yes, it is possible, but you can only declare the class attribute once per HTML element. Just separate the classes you want to apply by a space. If you declare the class attribute more than once, all definitions beyond the first will be ignored, so in your code. 
+
+
+Ans 2:	a) simply add the value of none to the display property.
+	b) Another method is to use the visibility: hidden;. It works similarly to display: none; but instead of actually removing the element it just hides it and makes it invisible.So, if the element took up some amount of space before, it will still take up the same amount of space within your visible design — visitors just won’t be able to see it.
+
+	c)Another way to hide elements with CSS is to use the position property. Here, you’re basically removing the element you want to hide from the normal HTML flow and place it outside of the visible realm. Setting an elements positioning to absolute places it at a specific point relative to the web browser, not in relation to other elements.
+			.my-class {
+	position: absolute;
+	left: -999px;
+		}
+
+Ans 3:	a) word-spacing
+	b) letter-spacing
+	c) text-shadow
+	d) using pseudo class first letter
+		eg: p ::first letter
+			{
+			 font-size:50
+			 font-style:italic
+			}
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        img{
+            border: 2px solid black;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+
+        #card1{
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid black; */
+            padding: 5px 0;
+            margin: 5px;
+            border-radius: 30px;
+            box-shadow: 0 -5px gray;
+            background-color: lightseagreen;
+
+        }
+        p{
+            padding: 3px;
+        }
+
+        @media (max-width:762px )
+        {
+            #card1{
+                background-color: red;
+            }
+        }
+        @media (min-width:762px) and (max-width:1146px )
+        {
+            #card1{
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Our Employees</h2>
+    <hr>
+    <div class="container">
+        <div id="card1">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="emp image"> <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div id="card1">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="emp image"> <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div id="card1">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="emp image"> <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div id="card1">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="emp image"> <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div id="card1">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="emp image"> <br>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                        <div id="card1">
+                            <img src="https://picsum.photos/seed/picsum/200/300" alt="emp image"> <br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+    </div>
+</body>
+</html>

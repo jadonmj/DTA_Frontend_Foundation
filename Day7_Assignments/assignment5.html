@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+   <h2 style="text-align: center;">Bank Account Opening Form</h2> 
+   
+    <form action="backend.php" method="get">
+        <div id="name">
+    <label for="fname">Name on Account <span style="color: red;">*</span></label> 
+    <input type="text" id="fname" name="fname" placeholder="First Name" required> 
+    <input type="text" id="fname" name="fname" placeholder="Middle Name"> 
+    <input type="text" id="fname" name="fname" placeholder="Last Name">  
+</div>
+<div id="acno">
+    <label for="num">Account Number <span style="color: red;">*</span></label> 
+    <input type="text" id="num" name="fname" placeholder="First Name"> 
+</div>
+<div id="acctype">
+    <label for="type">Account Type </label>
+    <section>
+        <input type="radio" id="type" name="fname" > 
+        Current Account
+    </section>
+    <section>
+        <input type="radio" id="type" name="fname" > 
+        Savings Account
+    </section>
+   
+    
+</div>
+<div id="address">
+    <label for="add">Address <span style="color: red;">*</span></label> 
+    <textarea  id="fname" name="fname" placeholder="Please enter full address" cols="30" rows="4"></textarea>
+    <input type="text" id="fname" name="fname" placeholder="City"> 
+    <input type="text" id="fname" name="fname" placeholder="State"> 
+    <input type="text" id="fname" name="fname" placeholder="Pincode"> 
+</div>
+<div id="occupation">
+    <label for="occu">Occupation</label>
+    <select name="occu" id="occu">
+        <option value="psec">Private Sector</option>
+        <option value="pub">Public Sector</option>
+        <option value="buss">Business Sector</option>
+    </select>
+</div>
+<div id="ph">
+    <label for="phone">Phone Number <span style="color: red;">*</span></label>
+    <select name="phone" id="phone">
+        <option value="home">Private Sector</option>
+        <option value="office">Public Sector</option>
+        <option value="work">Business Sector</option>
+    </select>
+    <input type="text" placeholder="Enter mobile number">
+</div>
+<div id="sub">
+    <button>Submit</button>
+</div>
+<div id="chkbox">
+    <input type="checkbox">I agree to terms and conditions <span style="color: red;">*</span>
+</div>
+    </form>
+
+</body>
+</html>
