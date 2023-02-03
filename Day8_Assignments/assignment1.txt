@@ -1,0 +1,26 @@
+Q1:	What is the use of "list" attribute and Datalist?
+Q2. 	What are  Web Crawlers  and  BackLinks  in SEO?
+
+
+Ans1:	The user can select from the options available and can enter its own data as well
+	The list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.
+	The <datalist> tag specifies a list of pre-defined options for an <input> element.
+	The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they 	input data.
+The <datalist> element's id attribute must be equal to the <input> element's list attribute (this binds them together).
+<form action="/action_page.php" method="get">
+
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+
+Ans2:	A web crawler is an online bot that explores web pages on the internet to learn about them and their content, all in order to serve this information to online searchers when they pose a query on a respective search engine.
+Backlink in Search Engine Optimisation is nothing but using others website to host your website such that when you click, you will be redirected to your own website. In short, hosting your hyperlink on another website to route to your own website. A backlink is generally also known as Inbound Link (IBL) or Incoming Links.
