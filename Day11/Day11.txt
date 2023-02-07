@@ -1,0 +1,32 @@
+1. How to add or remove css classes to html elements using JavaScript?
+2. What is CDN? What are the advantages of using CDN urls?
+3:  How to align justify using Bootstrap?
+
+
+Ans1:	Step 1) Add HTML:
+	Add a class name to the div element with id="myDIV" (in this example we use a button to add the class).
+
+	Step 2) Add CSS:
+	Style the specified class name:
+
+  Example
+  .mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+
+Step 3) Add JavaScript:
+Get the <div> element with id="myDIV" and add the "mystyle" class to it:
+
+Example
+function myFunction() {
+  var element = document.getElementById("myDIV");
+  element.classList.add("mystyle");
+}
+
+Ans2 : 	If you want to make text justify aligned using Bootstrap, you have to use Bootstrap class .text-justify.
+
+Ans3 :CDN A content delivery network (CDN) is a geographically dispersed network of servers and data centers. The goal of CDN is to facilitate increased web performance and high availability by locating web content copies closer to the end-users.
