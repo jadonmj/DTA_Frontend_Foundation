@@ -1,0 +1,28 @@
+@for $i from 1 to 7
+{
+    $basesize: 10px;
+    .p#{$i}
+    {  
+        text-align: center;
+        margin: 4px;
+        border: 2px solid;
+        margin:5px solid black;
+        font-size: $basesize* $i;
+        @if($i<4){
+            border-color: red;
+            color: red;
+        }
+        @else{
+            border-color:  green;
+            color: green;
+        }
+    }
+}
+
+.box_1{
+    background-color: beige;
+    border: 2px solid black;
+    padding: 2% 5%;
+    margin: 0;
+    text-align: center;
+}

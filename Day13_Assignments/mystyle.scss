@@ -1,0 +1,26 @@
+@mixin imgstyle($colr , $shape)
+{
+border: 1px solid black;
+box-shadow:  2px 2px 5px blue;
+@if($shape=="circle")
+{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+}
+@if($shape=="square")
+{
+    width:50px;
+    height: 50px;
+    
+}
+
+}
+.main{
+    margin: auto;
+    text-align: center;
+    padding: 50px
+}
+img{
+    @include imgstyle(blue, circle);
+}
