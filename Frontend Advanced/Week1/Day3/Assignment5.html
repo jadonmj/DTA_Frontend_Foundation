@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid purple;
+            padding: 10px;
+            width: 50%;
+            margin: auto;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <hr>
+    <form id="form1" name="form1" onsubmit="fn_submit()"  method="get">
+    Customer Name : <input type="text" id="cid" autofocus>
+    <span id="cnamereq"></span> 
+    <br><br>
+    Source Station : <input type="text" id="sst">
+    <br><br>
+    Destination Station : <input type="text" id="dst">
+    <span id="dreq" ></span> 
+    <br><br>
+    Contact Number : <input type="text" id="cno">
+    <span id="cnoreq"></span> 
+    <br><br>
+    Email : <input type="text" id="email">
+    <span id="emailreq"></span> 
+    <br><br>
+    <input  type="submit"  value="Register"  />
+</form>
+    <script>
+
+        function fn_submit()
+        {
+        var cidObj = document.getElementById("cid");
+        var sstObj = document.getElementById("sst");
+        var dstObj = document.getElementById("dst");
+        var cnoObj = document.getElementById("cno");
+        var emailObj = document.getElementById("email");
+
+        var cnamereqObj = document.getElementById("cnamereq");
+        var cnoreqObj = document.getElementById("cnoreq");
+        var emailreqObj = document.getElementById("emailreq");
+        var dreqObj = document.getElementById("dreq");
+
+        var  isFormValid = true;
+					 
+					 if(cidObj.value.length ==  0)
+					 {
+							cnamereqObj.innerHTML = "User Id required";
+							isFormValid = false;
+					 }
+                     if (sstObj.value == dstObj.value)
+                     {
+                            dreqObj.innerHTML = "Source station & destination should not be same"
+                            isFormValid = false;
+                     }
+                     if (cnoObj.value.length <10 )
+                     {
+                            cnoreqObj.innerHTML = "Required,  should have 10 digits"
+                            isFormValid = false;
+
+                     }
+                     if(emailObj.value.length ==  0)
+					 {
+							emailreqObj.innerHTML = "Email required";
+							isFormValid = false;
+					 }
+                    if(isFormValid == false)
+					 {
+							event.preventDefault();
+					 }
+                    }
+    </script>
+</body>
+</html>

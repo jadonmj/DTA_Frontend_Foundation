@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mathematical Operations</h1>
+    <hr>
+    <div id="container" style="border: 2px solid purple; padding: 5px; width: 50%; margin:auto">
+        <label for="fno">First Number :</label>
+        <input type="text" id="fno"> <br> <br>
+        <label for="secno">Second Number :</label>
+        <input type="text" id="secno"> <br> <br>
+        <button type="submit" value="Add" onclick="fn_Calc()">Add</button>
+        <button type="submit" value="Sub" onclick="fn_Calc()">Sub</button>
+        <button type="submit" value="Mul" onclick="fn_Calc()">Multiply</button>
+        <p id="show"></p>
+        <script>
+            var fnoObj = document.getElementById("fno");
+            var secnoObj = document.getElementById("secno");
+            var showObj = document.getElementById("show");
+            
+            function fn_Calc()
+            {
+                const {name,value}= event.target;
+                if(value=="Add")
+                {
+            var result1 = parseInt(fnoObj.value) + parseInt(secnoObj.value);
+            showObj.innerHTML = "Result : " + result1;
+            }
+            if(value=="Sub")
+            {
+            var result2 = parseInt(fnoObj.value) - parseInt(secnoObj.value);
+            showObj.innerHTML = "Result : " + result2;
+            }
+            if(value=="Mul")
+            {
+            var result3 = parseInt(fnoObj.value) * parseInt(secnoObj.value);
+            showObj.innerHTML = "Result : " + result3;
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>

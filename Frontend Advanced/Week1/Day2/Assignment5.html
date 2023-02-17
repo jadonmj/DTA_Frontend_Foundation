@@ -1,0 +1,69 @@
+<html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming -- Control Structures </h3>
+		<hr/>
+		<fieldset>	
+		Select City Code  :  
+		<select id="s1">
+           
+			<option>HYD</option>
+			<option>BLR</option>
+			<option>MUM</option>
+			<option>GUR</option>
+		</select>		 
+		<input  type="button"  value="Get Branch Details"  onclick="fn_getData()"  />
+		<p  id="p1"></p>
+		 </fieldset>		
+		<script>		
+        var  paraObj  =  document.getElementById("p1");		
+		var  selectObj  =  document.getElementById("s1");	
+        
+					
+				function  fn_getData()
+				{
+					var x = document.createElement("IMG");
+					
+				switch( selectObj.value  )
+				{ 
+							case "HYD" :    	paraObj.innerHTML = "You have selected Hyderabad Branch"+ "<br>" +"Address : Meenakshi Tech Park, Survey No. 41 Gachibowli Village Ranga Reddy District Telangana" + "<br> <br> "; 
+                            x.setAttribute("src", "https://qph.fs.quoracdn.net/main-qimg-4a1971dbd98a3bcb9fa0913fab372f7d");
+                            x.setAttribute("width", "304");
+                            x.setAttribute("height", "228");
+                            x.setAttribute("alt", "Deloitte Office Hyd");
+                            paraObj.appendChild(x); 
+
+														break; 
+														
+							case "BLR" :    	paraObj.innerHTML = "You have selected Bangalore Branch"+"<br>" +"Address : Block A, Level 7, 77 Degree Town Center, Survey No. 124 and 36/2 Ammani Bellandur Khane Village Varthur Hobli, Bangalore East Taluk Karnataka 560037 <br/> <br/>";  
+														
+                            x.setAttribute("src", "https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Deloitte_1634716046.jpg");
+                            x.setAttribute("width", "304");
+                            x.setAttribute("height", "228");
+                            x.setAttribute("alt", "Deloitte Office Blr");
+                            paraObj.appendChild(x);
+break; 
+														
+							case "MUM" :    	paraObj.innerHTML = "You have selected Mumbai Branch"+ "<br>" + "Address : Powaii Mumbai <br/> <br/>";  
+                                                							
+                            x.setAttribute("src", "https://media.glassdoor.com/l/a1/bb/9f/7c/deloitte-powai-office.jpg");
+                            x.setAttribute("width", "304");
+                            x.setAttribute("height", "228");
+                            x.setAttribute("alt", "Deloitte Office Mumbai");
+                            paraObj.appendChild(x); 
+														break; 
+							
+							case "GUR" :    	paraObj.innerHTML = "You have selected Gurgaon Branch"+"<br>" +"Address : RMZ Infinity Tower, Gurgaon Main Office <br/> <br/>"; 
+                            							
+                            x.setAttribute("src", "https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Deloitte_1634716046.jpg");
+                            x.setAttribute("width", "304");
+                            x.setAttribute("height", "228");
+                            x.setAttribute("alt", "Deloitte Office Gur");
+                            paraObj.appendChild(x);  
+														break; 
+					}
+				}		
+		</script>
+		 
+	</body>
+</html>

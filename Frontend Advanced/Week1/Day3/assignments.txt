@@ -1,0 +1,56 @@
+~~~~~~~~~~~~
+1. What is BOM?  Differences between BOM and DOM?
+2. What is the event.preventDefault()?
+3. Redesign the yesterday example (Math Operations) using single event handler with the help of event.target.
+
+4 .  	Create a web page to display technology names in the table format (Refer the Image).
+			a.  Each row should  four items
+			b.  Next items should repeat in next row		
+5.  Create a web page to perform validations using javascript forms.
+
+		a.   Customer Name :    Required
+		b.   Source Station   
+		c.   Destination Station  :  Source station & destination should not be same
+		d.   Contact Number  :  Required,  should have 10 digits
+		e.    E-mail   :  Required
+		
+		(Hint :  Do not use HTML5 attributes )
+			
+6.   Find some details about the following methods:
+			a. push()
+			b. pop()
+			c. splice()			
+ 
+7. Update the previous example (Arrays_Dynamic.html)  to implement the following requirements:
+
+	a. It does not allow to add duplicates. If you try to add it should show message. 
+	b. Item should be in uppercase and push into array. 
+	c. If the given item is not exists, you need to show the message while removing the item.
+
+
+Ans1: The Browser Object Model (BOM) is used to interact with the browser.
+The default object of browser is window means you can call all the functions of window by specifying window or directly. For example:
+window.alert("hello javatpoint");  
+is same as:
+alert("hello javatpoint");  
+
+
+Ans2: The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+For example, this can be useful when:
+Clicking on a "Submit" button, prevent it from submitting a form
+Clicking on a link, prevent the link from following the URL
+
+Ans6: The push() method adds new items to the end of an array.
+The push() method changes the length of the array.
+The push() method returns the new length.
+For Eg: const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi", "Lemon");
+
+The pop() method removes (pops) the last element of an array.
+The pop() method changes the original array.
+The pop() method returns the removed element.
+
+The splice() method adds and/or removes array elements.
+The splice() method overwrites the original array.
+
+

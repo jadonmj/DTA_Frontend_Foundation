@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid purple;
+            border-radius: 20px;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Functions</h1>
+    <hr>
+    <div class="main">
+    <p id="display"> <strong> Given  Array : Arr [1,2,3,4,5,6,7,8]</strong> </p>
+    <input type="button" value="Get Even" onclick="fn_countEven()">
+     <p id="show1"></p>
+</div>
+<div class="main">
+    Enter X : <input type="number" id="X">
+    Enter Y : <input type="number" id="Y"> <br> <br>
+    <input type="button" value="Find Power" onclick="fn_power()">
+    <p id="show2"></p>
+</div>
+<div class="main">
+    Enter a String : <input type="text" id="txt">
+     <br> <br>
+    <input type="button" value="Find No. of Words" onclick="fn_words()">
+    <p id="show3"></p>
+</div>
+
+<script>
+    function fn_countEven()
+    {
+    var Arr = [1,2,3,4,5,6,7,8];
+    var count=0;
+    var show1Obj = document.getElementById("show1");
+    Arr.map(fn_GetEven)
+    function fn_GetEven(n)
+    {
+        if(n%2==0)
+        {
+            count++;
+        }
+    }
+    show1Obj.innerHTML= "Number of Even Elements are : " + count;
+}
+
+function fn_power()
+{
+    var XObj = document.getElementById("X").value; 
+    var YObj = document.getElementById("Y").value; 
+    var show2Obj = document.getElementById("show2"); 
+    var calc = Math.pow(XObj,YObj);
+    show2Obj.innerHTML = calc;
+}
+
+function fn_words()
+{
+    var txtObj= document.getElementById("txt");
+    var show3Obj = document.getElementById("show3");
+    var arr = txtObj.value.split(" ");
+    show3Obj.innerHTML = "Word Count : " + arr.length;
+}
+</script>
+</body>
+</html>

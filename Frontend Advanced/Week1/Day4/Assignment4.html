@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<style>
+			#main{
+				border: 2px solid black;
+            border-radius: 20px;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: aquamarine;
+				
+			}
+			#main2{
+				border: 2px solid black;
+            border-radius: 20px;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: beige;
+			}
+			#main3{
+				border: 2px solid black;
+            border-radius: 20px;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: lightskyblue;
+			}
+			/* input{
+				background-color: blueviolet;
+				color: blanchedalmond;
+				border-radius: 2px;
+			} */
+		</style>
+	</head>
+	<body>
+		<h3>JavaScript Programming -- Advanced Functions </h3>
+		<hr/>
+		<div id="main">
+			<input type="button" value="Get Upper Case" onclick="fn_Upper()">
+			<p id="Show1"></p>
+		</div>
+		<div id="main2">
+			<input type="button" value="Get First Three" onclick="fn_three()">
+			<p id="Show2"></p>
+		</div>
+		<div id="main3">
+			<input type="button" value="Replace" onclick="fn_replace()">
+			<p id="Show3"></p>
+		</div>
+		<script> 	  
+			
+				var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];	
+				console.log(citiesArray);
+				function fn_Upper()
+				{
+					var show1Obj = document.getElementById("Show1")
+				// 1. Named function 
+				var  arr1 =  citiesArray.map(fn_UpperCase);
+				console.log(arr1);
+
+				function    fn_UpperCase(n)
+				{
+					return  n.toUpperCase();
+				}
+				show1Obj.innerHTML = "    " + arr1;
+			}
+			function fn_three()
+			{	
+				var show2Obj = document.getElementById("Show2");
+				// 2. Anonymous Function 
+				var  arr2 =  citiesArray.map(   function(n)
+					{
+							return n.substring(0,3);
+					}				
+				);
+				console.log(arr2);
+				show2Obj.innerHTML = "    " + arr2;
+			}
+				function fn_replace()
+				{
+					var show3Obj = document.getElementById("Show3");
+				var  arr3 =  citiesArray.map(   n =>  n.replaceAll("a","@")  );
+				console.log(arr3);
+				show3Obj.innerHTML= arr3;
+				}
+		</script>
+		 
+	</body>
+</html>
