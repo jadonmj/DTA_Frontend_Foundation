@@ -1,0 +1,189 @@
+$fontcolor: beige;
+@mixin iconStyle($iconColor,$disProp){
+    display: $disProp;
+    -webkit-text-stroke: 2px; 
+    margin-left: 5px;
+    color: $iconColor;
+}
+form{
+    border: 2px solid #64d5da;
+}
+.example{
+    display: flex;
+}
+.butto{
+    background-color: #64d5da;
+    border: none;
+    i{
+        @include iconStyle(white,block);
+        -webkit-text-stroke:1px;
+    }
+    
+}
+body{
+     font-family: helvetica;
+     padding: 0px;
+     margin: 0px;
+}
+.box_1{
+    background-color: blue;
+    background-image: linear-gradient(to right, rgb(79, 79, 234) , rgb(77, 211, 135));
+    height: 150px;
+}
+#title1{
+    padding-left: 50px;
+    padding-top: 25px;
+    
+}
+#title1 h1{
+    font-weight: lighter;
+     font-size: 32px; 
+     color: $fontcolor;
+}
+#title2{
+    padding-left: 50px;
+}
+.home{
+    color:rgb(56, 181, 110);
+}
+.arrow{
+    color: $fontcolor;
+}
+#box_2{
+    padding: 96px 46px 0 50px;
+    width: auto;
+    margin: 0px;
+    
+}
+#title3 h2{
+    font-weight: lighter;
+    font: 36px helvetica;
+    margin: 0px 0px 10px;
+}
+#title3{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+#hed_1
+{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(#2d5cde,#02c873);
+    background: -o-linear-gradient(#2d5cde,#02c873);
+    background: linear-gradient(#2d5cde,#02c873);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+.para1 p{
+    font-size: 14px;
+    color: #4a4a4a;
+}
+.emptyspace{
+    height: 32px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 96px;
+}
+.card
+{
+    height: 270px;
+    width: 359px;
+    // border: 2px solid black;
+    margin: 0px 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,#1b97f0 ,#3be2bc );
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: background-image 4s;
+    transition-timing-function: ease;
+    &:hover{
+        cursor: pointer;
+        
+    background-image: linear-gradient(to left,#1b97f0 ,#3be2bc );
+      }
+}
+.card h4{
+    color: $fontcolor;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+.card p{
+    font: 16px helvetica;
+    color: $fontcolor;
+}
+#cont{
+    // padding: 96px 46px 0px 50px;
+    // border: 2px solid black;
+    width: 100%;
+    background-color: #232636;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#box_3{
+    padding: 96px 46px 0px 50px;
+    // border: 2px solid black;
+    width: 100%;
+    background-color: #232636;
+   
+}
+#cont p{
+    color: #fff;
+    font-size: 14px;
+}
+#cont h4{
+    color: #fff;
+    font: 14px helvetica;
+}
+.footer
+{
+    padding: 0px 15px;
+}
+.footer li{
+    color: #fff;
+    // font: 14px helvetica;
+}
+#bottom{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-between;
+    
+}
+#bottom p{
+ font-size: 12px !important;
+ font-family: helvetica;
+
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    li{
+        margin-bottom: 10px;
+        
+    }
+}
+.hvr li:hover {
+cursor: pointer;
+color:#64d5da;
+}
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  border-left: 5px solid #64d5da;
+  margin-right: 2px;
+}
