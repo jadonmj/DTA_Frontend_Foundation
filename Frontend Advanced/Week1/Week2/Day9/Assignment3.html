@@ -1,0 +1,67 @@
+<!-- Create HTML Page to display Hello World message by using jQuery -->
+<html>
+ <head> 
+ </head>
+ <body>
+	 <h2> DOM Manipulations in jQuery</h2>
+<hr> 
+<input type="text" id="pname" placeholder="Enter Product Name">
+<input type="number" id="uprice" placeholder="Enter Unit Price">
+<input type="number" id="units" placeholder="Enter No. of Units in Stock">
+<input type="button"  id="b1" value="Add Row" />
+
+<br></br>
+<hr>
+ <table  id="table1" border="2" width="400px">
+	<tr>
+		<th>Product Name</th>
+		<th>Unit Price</th>
+		<th>Units In Stock</th>
+	</tr>
+	<tr>
+		<td>Printer</td>
+		<td>2500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>4GB-RAM</td>
+		<td>1200.00</td>
+		<td>23</td>
+	</tr> 
+	<tr>
+		<td>1TB Samsung HDD</td>
+		<td>4500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>32-GB Kingston USB</td>
+		<td>800.00</td>
+		<td>35</td>
+	</tr>  
+	</table>  
+		 
+ 
+	
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+		$(document).ready(function()
+		{
+				$("#b1").click(function()  
+				{ 
+                    var a = $("#pname").val();
+					var b = $("#uprice").val();
+					var c = $("#units").val();
+					
+	let  str  = "<tr  >  <td>" +a+ "</td>  <td>" + b + "</td>  <td>" +c+ "</td>  </tr>";	
+	// console.log(str);
+			 		 $("#table1").append(str);	
+			 		//  $("#table1").prepend(str);	
+				});	
+		 
+		});
+				
+	</script>
+	
+ </body>
+</html>

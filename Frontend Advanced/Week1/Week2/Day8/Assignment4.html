@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+</head>
+<body>
+    <h1>jQuery Programming</h1>
+	<hr />	
+	Product Name:
+	<input type="text" class="c2" id="t1" />
+	<br><br>
+	Unit Price:
+	<input type="number" class="c2"  id="t2" />
+	<br><br>
+    Quantity:
+	<input type="number" class="c2"  id="t3" />
+    <br><br>
+    <input type="button"  id="b1" class="c1" value="Get Total" />	 
+	
+	<br /> <hr />
+	<p id="p1"></p>
+    <script>
+        $(document).ready(function()
+        {
+        $(".c1").click(function()
+        {
+            let x =  $("#t2").val();	
+            let qty =  $("#t3").val();
+            var result = 0;
+            if(qty>10){
+                result= 0.9*(x*qty);
+            }
+            else{
+                result=x*qty;
+            }
+            $("#p1").html("Result : " + result);
+        });
+    });
+    </script>
+</body>
+</html>
